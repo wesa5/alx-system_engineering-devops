@@ -1,11 +1,8 @@
-
 #!/usr/bin/env bash
-# writest he mesaage I am alive to /tmp/my_process
+# Infinite loop. Script to be used with 101-manage_my_process
 
-
-echo "" > /tmp/my_process
-
-while true;
+while true
 do
-  echo "I am alive!" >> /tmp/my_process
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
 done
