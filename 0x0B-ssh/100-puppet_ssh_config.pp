@@ -2,7 +2,7 @@
 $file_content = file('/etc/ssh/ssh_config')
 $config = "${file_content}\
     IdentityFile ~/.ssh/school
-    PasswordAuthentication no
+    PasswordAuthentication yes
 "
 file {  'school':
   ensure  => 'present',
